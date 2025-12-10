@@ -1,6 +1,10 @@
 Test for writing simple Paraview-readable files using C++. 
 
-Compile with:
-mpicxx -std=c++11 -O3 -o test_paraview test.cpp
-Run with:
-mpirun -np 4 ./test_paraview                    
+```sh
+module load PrgEnv-gnu
+```
+
+* Compile with:
+CC -std=c++11 -O3 -o test.exe main.cpp
+* Run with:
+mpiexec -np 1 ./test.exe                   
